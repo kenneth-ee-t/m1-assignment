@@ -1,3 +1,5 @@
+
+/* styling header */
 header {
     background: url(images/aerialView.jpg) 0 -200px no-repeat;
     background-size: 1500px;
@@ -32,4 +34,21 @@ nav {
     height: 50px;
     text-align: left;
     padding: 2px;
+}
+/* syling main page*/
+main {
+    height: 300px;
+}
+main h1 {
+    color: rgb(129, 141, 179);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*styling footer */
+footer {
+    height: 40px;
+    background-color: rgb(129, 141, 179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211, 218, 240);
 }
