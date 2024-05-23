@@ -1,13 +1,22 @@
 
 /* styling header */
 header {
-    background: url(images/aerialView.jpg) 0 -200px no-repeat;
-    background-size: 1500px;
-    height: 400px;
-    padding-top: 100px;
-    padding-left: 100px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 400px;
+    padding: 3em;
+    background-color: #753a30;
+}
+#home header {
+    background: no-repeat lightgrey url(images/welcome-heritage-newzealand.jpg) 0 -200px ;
+    background-size: cover;
+}
+#about header {
+    background: no-repeat url(images/Petone-Councillors-october-2022.jpg) 0 -200px;
+    background-size: cover;
+}
+#contact header {
+    background: no-repeat url(images/petone-wharf-salvation-army.jpg) 0 -200px;
+    background-size: cover;
 }
 li {
     list-style-type: none;
@@ -29,19 +38,74 @@ li a:hover {
 li a:active {
     color:#753a30;
 }
-nav {
-    background-color: rgb(234, 213, 203);
-    height: 50px;
-    text-align: left;
-    padding: 2px;
+.container nav {
+     text-transform: uppercase;
+    list-style-type: none;
+    display: inline-block;
+    float:left;
+    font-size: 14px;
+    line-height: 100px;
 }
 /* syling main page*/
 main {
     height: 300px;
 }
-main h1 {
+h1 {
     color: rgb(129, 141, 179);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling table */
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    width: 250px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+/*styling form */
+label {
+    display: block;
+    margin: 15px 0 0
+}
+input, textarea {
+    width: 300px;
+}
+input[type="radio"] {
+    width: 25px;
+}
+input[type="submit"]{
+    display:block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+    background-color: #ca4c36;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.button {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+input:focus{
+    background-color: rgb(217, 219, 227);
 }
 
 /*styling footer */
