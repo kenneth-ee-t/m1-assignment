@@ -74,8 +74,6 @@ p {
     margin: 20px 0;
 }
 
-  
-
 /* syling main page*/
 main {
     height: 300px;
@@ -87,7 +85,9 @@ main {
     padding: 0px;
 }
 .our-contact li{
+    list-style-type: none;
     margin-block: 5px;
+    margin-left: 20px;
 }
 .our-contact .first-word{
 font-weight:bolder;
@@ -104,7 +104,7 @@ section .table-of-mayors{
 }
 
 table {
-    margin-top: 35px;
+    margin: 20px;
 }
 table, caption, th, td {
     border: 1px solid #000;
@@ -135,18 +135,24 @@ section .sub-topic-image img{
 }
 
  .to-top {
-    text-decoration: none;
+    width: 120px;
+    align-content: center;
     padding: 10px;
-    margin: 20px 0;
+    margin: 5px;
     font: bolder;
     background-color:rgb(211, 218, 240, 0.4);
     border-radius: 40px;
     border: 1px solid rgb(129, 141, 179);
 }
+
+.to-top a {
+    text-decoration: none;
+}
 section #video{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 10px;
 }
 section #video a{
     text-decoration: none;
@@ -157,12 +163,12 @@ iframe {
 hr {
     margin-top: 20px;
 }
-/* .a-list {
+.a-list {
     list-style-type: lower-alpha;
 }
 .b-list {
     list-style-type: lower-roman;
-} */
+}
 
 
 /*styling form */
@@ -200,9 +206,41 @@ input:focus{
 
 /*styling footer */
 footer {
-    height: 40px;
-    background-color: rgb(129, 141, 179);
-    text-align: center;
+    height: 50px;
+    background-color: rgb(87, 87, 89);
     padding-top: 20px;
     color: rgb(211, 218, 240);
+    display: flex;
+}
+footer p {
+    text-align: center;
+}
+footer #disclaimer .social {
+text-align: center;
+display: flex;
+align-self: center;
+}
+footer #disclaimer .social .fa {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+footer #disclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #disclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer #disclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+footer #disclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
