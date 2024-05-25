@@ -57,10 +57,10 @@ header .main-menu {
     color: #888;
 }
 .main-menu ul li a:hover {
-    color: #9ed034;
+    color: #bd5f2c;
 }
 .main-menu ul li.active {
-    background:#9ed034;
+    background:#3d3e3c;
     border: none;
 }
 .main-menu ul li .active a {
