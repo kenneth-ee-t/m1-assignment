@@ -57,7 +57,7 @@ header .main-menu {
     color: #888;
 }
 .main-menu ul li a:hover {
-    color: #bd5f2c;
+    color: #944c26;
 }
 .main-menu ul li.active {
     background:#3d3e3c;
@@ -104,28 +104,47 @@ section .table-of-mayors{
 }
 
 table {
-    margin: 20px;
-}
-table, caption, th, td {
-    border: 1px solid #000;
-}
-
-th, td {
-    width: 250px;
-    height: 35px;
-    text-align: center;
+    width: 1000px;
+    margin: 40px;
 }
 caption {
-    text-transform: uppercase;
-    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
     height: 40px;
-    padding-top: 15px;
-    color: #753a30;
+    padding-top: 1em;
+    color: #fff;
+    background: #852B1B ;
 }
+thead {
+    background: #BDE1FF;
+}
+
+tbody {
+    text-align: center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #FFF;
+}
+td:first-child {
+    font-weight: bold;
+    background: #bde1ff;
+}
+
 section .sub-topic-image{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 40px;
 }
 section .sub-topic-image a{
     text-decoration: none;
@@ -152,7 +171,7 @@ section #video{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 40px;
 }
 section #video a{
     text-decoration: none;
