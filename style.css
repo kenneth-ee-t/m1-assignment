@@ -171,6 +171,12 @@ section .sub-topic-image img{
 .to-top a {
     text-decoration: none;
 }
+.to-top:hover{
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
 section #video{
     display: flex;
     align-items: center;
@@ -225,26 +231,6 @@ hr {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*section {
-    width: 100%;
-}
-#gallery-set {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-#gallery-set .gallery-container {
-    text-align: center;
-    background-color: #852b1b;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font: bolder;
-    max-width:max-content;
-}
-#gallery-set .gallery-container h4 {
-    margin: 0;
-    height: 30px;
-}*/
 
 /*styling form */
 legend {
