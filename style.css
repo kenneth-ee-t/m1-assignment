@@ -193,7 +193,7 @@ hr {
     list-style-type: lower-roman;
 }
 /*styling gallery */
-section {
+#gallery #container #wrapper section {
     display: flex;
     justify-content: center;
 }
