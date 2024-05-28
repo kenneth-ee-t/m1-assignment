@@ -17,6 +17,10 @@ header {
     background: no-repeat url(images/pexels-kyleroxas-v3.jpg) ;
     background-size: cover;
 }
+#gallery header {
+    background: no-repeat url(images/heritage.jpg) 0 -200px;
+    background-size: cover;
+}
 #contact header {
     background: no-repeat url(images/pexels-pixabay-37650.jpg) 0 -200px;
     background-size: cover;
@@ -188,7 +192,59 @@ hr {
 .b-list {
     list-style-type: lower-roman;
 }
+/*styling gallery */
+section {
+    display: flex;
+    justify-content: center;
+}
+#gallery-set {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.gallery-container {
+    padding: 10px;
+}
+.gallery-container img {
+    width: 100%;
+}
+.gallery-container img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+    
+.desc {
+    padding: 10px;
+    text-align: center;
+    background: #852b1b;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*section {
+    width: 100%;
+}
+#gallery-set {
+    display: flex;
+    flex-wrap: wrap;
 
+}
+#gallery-set .gallery-container {
+    text-align: center;
+    background-color: #852b1b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bolder;
+    max-width:max-content;
+}
+#gallery-set .gallery-container h4 {
+    margin: 0;
+    height: 30px;
+}*/
 
 /*styling form */
 legend {
