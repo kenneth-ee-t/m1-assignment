@@ -116,7 +116,7 @@
             for (var i=0; i<10; i++) {
                 fileNames.push("photo"+(i+1));
                 photos.push('<img src="gallery/'+ fileNames[i]+'.jpg">');
-                image = openList + '<div class="desc">' + descText[i] + '</div>'+ photos[i] + closeList;
+                image = openList + photos[i] + '<div class="desc">' + descText[i] + '</div>' + closeList;
                 imageList.push(image);
             }
             document.getElementById("gallery-set").innerHTML = imageList.join(" ");
