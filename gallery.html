@@ -30,9 +30,9 @@
                 
             <section>
                 <div id="gallery-set">
-                    <div class="photo">
+                    <!--<div class="photo">
                         <div class="desc">Petone Meseum</div>
-                        <img src="gallery/photo1.jpg" alt="Petone Settlers Meseum">
+                       <img src="gallery/photo1.jpg" alt="Petone Settlers Meseum">
                     </div>
                     <div class="photo">
                         <div class="desc">Petone Police Station</div>
@@ -58,7 +58,6 @@
                         <div class="desc">Petone Road</div>
                         <img src="gallery/photo7.jpg" alt="Petone Road">
                     </div>
-
                     <div class="photo">
                         <div class="desc">Petone Quest Hotel</div>
                         <img src="gallery/photo8.jpg" alt="Petone Quest Hotel">
@@ -70,7 +69,7 @@
                     <div class="photo">
                         <div class="desc">Petone Playground</div>
                         <img src="gallery/photo10.jpg" alt="Petone Playground">
-                    </div>
+                    </div>-->
                         <!--<div class="galleryHeritage"> <h4>Iona Cross</h4><img src="gallery/Iona-CrossRS.jpg" alt="Iona Cross">
                             <div class="galleryHeritage"> <h4>Te Puna Wai Ora Fountain Cliff</h4><img src="gallery/te_Puna_Wai_Ora_fountainRS.jpg" alt="Te Puna Wai Ora Fountain">
                             <div class="galleryHeritage"> <h4>Petone Wharf</h4><img src="gallery/petone-wharf.jpg" alt="Petone Wharf">
@@ -94,5 +93,33 @@
         <!--End of Footer information-->
     </div>
     </div>
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image;
+        var openList = '<div class="photo">';
+        var closeList = '</div>';
+
+        var descText = [
+        "Petone Meseum",
+        "Petone Police Station",
+        "Petone Railway Station",
+        "Iona Cross",
+        "Puna W. O. Fountain",
+        "Petone Wharf",
+        "Petone Road",
+        "Petone Quest Hotel",
+        "Petone Fair Dragon",
+        "Petone Playground"
+        ];
+            for (var i=0; i<10; i++) {
+                fileNames.push("photo"+(i+1));
+                photos.push('<img src="gallery/'+ fileNames[i]+'.jpg">');
+                image = openList + '<div class="desc">' + descText[i] + '</div>'+ photos[i] + closeList;
+                imageList.push(image);
+            }
+            document.getElementById("gallery-set").innerHTML = imageList.join(" ");
+    </script>
 </body>
 </html>
