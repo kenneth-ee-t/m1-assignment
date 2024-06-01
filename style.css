@@ -211,13 +211,13 @@ hr {
     justify-content: center;
     
 }
-.gallery-container {
+.photo {
     padding: 10px;
 }
-.gallery-container img {
+.photo img {
     width: 100%;
 }
-.gallery-container img:hover{
+.photo img:hover{
     cursor: pointer;
     opacity: 0.5;
     transition: 0.5s;
