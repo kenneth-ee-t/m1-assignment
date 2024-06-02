@@ -209,20 +209,42 @@ hr {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
-.photo {
+
+#gallery-set .photo {
+    position: relative;
+    justify-items: center;
     padding: 10px;
 }
+
 .photo img {
     width: 100%;
 }
-.photo img:hover{
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.5s;
+#gallery-set p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(85, 80, 80, 0.471);
+    text-align: center;
+    padding-top: 0%;
+    position: absolute;
+    top: 10px;
+    width: 280px;
+    height: 374px;
+    margin:0;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.6s;
 }
-    
+#gallery-set p:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.6s;
+    cursor: pointer;
+}  
 .desc {
     padding: 10px;
     text-align: center;
