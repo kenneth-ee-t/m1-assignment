@@ -67,36 +67,49 @@ function showPopup(index) {
     infoBoxContainer.style.left = "0";
     infoBoxContainer.style.width = "100%";
     infoBoxContainer.style.height = "100%";
-    infoBoxContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     infoBoxContainer.style.zIndex = "999";
 
     // Create information box
     var infoBox = document.createElement("div");
     infoBox.id = "infoBox";
     infoBox.className = "popup-content";  // Apply a class for styling
-    infoBox.style.position = "absolute";  // Use absolute positioning for centering within the gallery
+    infoBox.style.position = "fixed";  // Use absolute positioning for centering within the gallery
     infoBox.style.top = "50%";             // Center vertically within the gallery
     infoBox.style.left = "50%";            // Center horizontally within the gallery
+    infoBox.style.width = "300px";
+    infoBox.style.borderRadius = "12px";
     infoBox.style.transform = "translate(-50%, -50%)";  // Adjust for centering
-    infoBox.style.background = "white";
+    infoBox.style.background = "Black";
+    infoBox.style.opacity = ".85";
     infoBox.style.padding = "20px";
-    infoBox.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
     infoBox.style.zIndex = "1000";  // Ensure popup appears above overlay
+    infoBox.style.display = "flex";
+    infoBox.style.flexDirection = "column"; // Column layout for flexbox
+    infoBox.style.alignItems = "left";     // Center horizontally
 
     // Create caption heading
     var caption = document.createElement("h2");
+    caption.style.color = "White";
+    caption.style.textAlign = "left";
+    caption.style.marginTop = "6px";
     caption.textContent = photoName[index];
 
     // Create text information
     var infoText = document.createElement("p");
+    infoText.style.color = "White";
     infoText.textContent = photoDescription[index];
 
     // Create close link
     var closeLink = document.createElement("a");
-    closeLink.textContent = "Close";
+    closeLink.textContent = "Click This To Close";
+    closeLink.style.color = "rgb(251, 236, 93)";
+    closeLink.style.textAlign = "center";
+    closeLink.style.padding = "40px 60px";
     closeLink.href = "#";
+    closeLink.style.textDecoration = "none"; // Ensure no underline
     closeLink.onclick = function () {
-        infoBoxContainer.parentNode.removeChild(infoBoxContainer); // Remove the info box container when clicked
+        event.preventDefault(); // Prevent the default anchor behavior
+        infoBoxContainer.style.visibility = "hidden"; // Hide the info box container when clicked
     };
 
     // Append elements to infoBox
