@@ -93,48 +93,7 @@
         <!--End of Footer information-->
     </div>
     </div>
-    <script>
-        var photos = [];
-        var fileNames = [];
-        var imageList = [];
-        var image;
-        var openList = '<div class="photo">';
-        var closeList = '</div>';
-
-        var photoName = [
-        "Petone Meseum",
-        "Petone Police Station",
-        "Petone Railway Station",
-        "Iona Cross",
-        "Puna W. O. Fountain",
-        "Petone Wharf",
-        "Petone Road",
-        "Petone Quest Hotel",
-        "Petone Fair Dragon",
-        "Petone Playground"
-        ];
-        var photoDescription = [
-        "A guardian of local history, a platform for education and engagement, and a vital cultural asset for the Petone community",
-        "A law enforcement facility serving the community of Petone and ensuring public safety since 1884",
-        "Constructed in 1875 and has since served as a connecting hub of Petone and the wider Hutt Valley region to Wellington and other parts of the country",
-        "A historic monument and a symbol of unity, faith, and heritage for both residents and visitors to Petone",
-        "Represents Petone's rich Maori heritage and its connection to the local community and translates to -Well of Life- in Maori",
-        "Contributed to the growth and development of Petone as an industrial and commercial center, attracting businesses and industries to the area",
-        "The unique charm and historical significance of Petone's winding roads make them a memorable feature of the town's landscape",
-        "Offer spacious and modern accommodation with facilities like fully-equipped kitchens, laundry facilities, and separate living areas",
-        "A symbolic figure associated with local festivities and cultural events in Petone",
-        "A recreational area equipped with play equipment and facilities for children and families to enjoy outdoor activities",
-       ]
-          for (var i=0; i<10; i++) {
-                fileNames.push("photo"+(i+1));
-                photos.push('<img src="gallery/'+ fileNames[i]+'.jpg">');
-                image = openList + photos[i] + '<div class="desc">' + photoName[i] + '</div>' + '<p>' + photoDescription[i] + '</p>'  + closeList;
-                imageList.push(image);
-            }
-            document.getElementById("gallery-set").innerHTML = imageList.join(" ");
-
-
-             
-    </script>
+    <script src="script.js"></script>
+   
 </body>
 </html>
